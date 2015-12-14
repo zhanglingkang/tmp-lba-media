@@ -1,6 +1,8 @@
 require('./style.scss')
 var React = require('react')
 var routes = require('../../routes')
+var ReactToastr = require("react-toastr")
+var {ToastContainer,ToastMessage} = ReactToastr
 var App = React.createClass({
     getInitialState() {
         return {}
@@ -37,6 +39,9 @@ var App = React.createClass({
                         <span style={{marginRight:"10px"}}>{this.state.userName}</span>
                         <span><a href="/logout">退出</a></span>
                     </div>
+                    <ToastContainer ref={(toast)=>{window.toast=toast}}
+                                    toastMessageFactory={React.createFactory(ToastMessage.jQuery)}
+                                    className="toast-top-right"/>
                 </header>
                 <section className="flex flex-1">
                     <nav id="menu-nav" className="flex">

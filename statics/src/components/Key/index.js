@@ -48,6 +48,14 @@ var Key = React.createClass({
     },
     onUpdateSuccess(){
         this.search()
+        toast.success(
+            '修改成功',
+            '',
+            {
+                timeOut: 4000,
+                extendedTimeOut: 1000,
+                closeButton: true
+            })
     },
     toPage(page){
         var {...searchForm}=this.state.searchForm
