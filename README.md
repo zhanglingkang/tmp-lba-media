@@ -2,7 +2,7 @@
 
 ### 使用技术和工具
 
-    node、react、webpack
+    node、react、webpack、bootstrap
     
 ### 如何让应用跑起来
 
@@ -39,6 +39,10 @@
 ### 组件API
 所有组件均用大驼峰命名
 
+#### react-bootstrap
+    
+    用法见http://react-bootstrap.github.io/
+
 #### Select
 props:
     
@@ -65,5 +69,21 @@ props:
     
 methods:
 
+* success
+* warning
+* error
+* info
+这几个方法表示发出不同类型的通知，参数一样，使用方式如 
 
+                  toast.warning(
+                    '服务器异常',//内容
+                    '操作失败',//标题
+                    {
+                        timeOut: 4000,//4s后关闭
+                        extendedTimeOut: 1000,//通知框淡出，1s完全消失
+                        closeButton: true//显示关闭按钮
+                    }
+                  )
     
+#### DateTimeField
+        用法见 http://web.npm.alibaba-inc.com/package/@alife/react-bootstrap-datetimepicker
