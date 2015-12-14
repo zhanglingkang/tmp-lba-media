@@ -5,10 +5,11 @@
   "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node --harmony ./app/index.js",
     "build": "bash ./bin/build.sh",
     "server": "node --harmony ./app/index.js",
-    "watch": "cd statics;gulp watch"
+    "watch": "cd statics;gulp watch",
+    "publish": "cd statics;gulp -p"
   },
   "author": "",
   "license": "ISC",

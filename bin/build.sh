@@ -7,7 +7,8 @@ cd "$__DIRNAME__"
 
 cd ../;tnpm i
 
-cd statics;tnpm i;gulp -p;
+#由于aone上下载依赖包太慢，暂时使用在发布前在本地构建的方式
+#cd statics;tnpm i;gulp -p;
 
 envType=$1
 __ENV__=daily
