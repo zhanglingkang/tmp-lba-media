@@ -7,7 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --harmony ./app/index.js",
     "build": "bash ./bin/build.sh",
-    "server": "node --harmony ./app/index.js",
     "watch": "cd statics;gulp watch",
     "publish": "cd statics;gulp -p"
   },

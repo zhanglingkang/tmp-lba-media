@@ -8,9 +8,12 @@
 
     1. 确保成功安装node
     2. 在应用根目录下运行npm run build可安装环境和完成构建
-    3. 在应用根目录下npm run server可启动服务器
+    3. 在应用根目录下npm start可启动服务器
     4. 访问<http://localhost:6001/>即可
-    
+
+### 如何部署
+    原先部署前是不需要做什么工作的，因为aone上下载依赖包比较慢，等待时间太长，而且aone有时构建失败
+    所以目前在本地构建，在发布前执行npm run publish即可。
 ### 如果开发
 
     在应用根目录下执行npm run watch，去statics/src下编辑源码就ok了（配合liverelaod可实时刷新页面）
