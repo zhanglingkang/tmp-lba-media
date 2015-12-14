@@ -1,4 +1,3 @@
-require('../Toastr/style.css')
 var React = require('react')
 var Modal = require('react-bootstrap/lib/Modal')
 var LinkedStateMixin = require('react-addons-linked-state-mixin')

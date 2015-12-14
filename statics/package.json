@@ -13,7 +13,6 @@
     "amazeui-react": "~1.0.0-beta2",
     "fbjs": "~0.3.2",
     "fixed-data-table": "~0.6.0",
-    "history": "~1.16.0",
     "moment": "~2.10.6",
     "react-addons-linked-state-mixin": "~0.14.3",
     "react-toastr": "~2.2.4"

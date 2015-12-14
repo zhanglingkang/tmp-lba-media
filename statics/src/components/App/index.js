@@ -1,4 +1,5 @@
 require('./style.scss')
+require('../Toastr/style.css')
 var React = require('react')
 var routes = require('../../routes')
 var ReactToastr = require("react-toastr")

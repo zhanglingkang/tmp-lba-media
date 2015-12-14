@@ -1,7 +1,6 @@
 var session = require('koa-session')
 var buc = require('koa-buc')
 var config = require('../config')
-var request = require('superagent')
 var _ = require('underscore')
 var querystring = require('querystring')
 app.keys = ['a', 'b']
