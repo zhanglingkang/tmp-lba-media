@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --harmony ./app/index.js",
     "build": "bash ./bin/build.sh",
-    "watch": "cd statics;gulp watch",
-    "publish": "cd statics;gulp -p"
+    "watch": "cd statics&&gulp watch",
+    "publish": "cd statics&&gulp -p"
   },
   "author": "",
   "license": "ISC",
