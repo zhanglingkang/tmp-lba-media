@@ -39,7 +39,7 @@ gulp.task('vendor', function (cb) {
     var unCompressJsFilter = filter('**/dist/**/*.js', {restore: true})
     gulp.src([
             'node_modules/{react,react-dom,bootstrap,jquery,fixed-data-table}/dist/**/*.*',
-            'node_modules/react-bootstrap-datetimepicker/css/**/*.*'
+            'node_modules/@alife/react-bootstrap-datetimepicker/css/**/*.*'
         ], {
             base: 'node_modules'
         })
