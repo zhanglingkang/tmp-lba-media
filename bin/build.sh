@@ -11,16 +11,16 @@ case $envType in
     daily )
     #日常环境
     __ENV__=daily
-    tnpm update -g
+    tnpm install -g tnpm@2.14.2;
     ;;
     prepub )
     #预发环境pre
     __ENV__=production
-    tnpm update -g
+    tnpm install -g tnpm@2.14.2;
     ;;
     publish )
     __ENV__=production
-    tnpm update -g
+    tnpm install -g tnpm@2.14.2;
     ;;
     * )
     #项目环境
