@@ -1,8 +1,11 @@
 {
-  "name": "boss",
+  "name": "amap-api-boss-web",
   "version": "1.0.0",
   "description": "",
   "main": "app/index.js",
+  "engines": {
+    "install-node": "5.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --harmony ./app/index.js",
