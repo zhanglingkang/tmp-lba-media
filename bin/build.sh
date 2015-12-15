@@ -36,6 +36,7 @@ NODE_BIN_DIR=/opt/taobao/install/node.js/bin
 NODE_BIN_FROM_MODULE=${BUILD_WORK_PATH}/node_modules/node/bin
 if [ -d ${NODE_BIN_FROM_MODULE} ]; then
   NODE_BIN_DIR=${NODE_BIN_FROM_MODULE}
+  echo "NODE目录-${NODE_BIN_DIR}"
 fi
 
 export PATH=${NODE_BIN_DIR}:/bin:/usr/bin:$PATH
