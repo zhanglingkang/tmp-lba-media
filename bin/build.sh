@@ -11,26 +11,25 @@ case $envType in
     daily )
     #日常环境
     __ENV__=daily
-    tnpm install -g tnpm@2.14.2;
     ;;
     prepub )
     #预发环境pre
     __ENV__=production
-    tnpm install -g tnpm@2.14.2;
     ;;
     publish )
     __ENV__=production
-    tnpm install -g tnpm@2.14.2;
     ;;
     * )
     #项目环境
     ;;
 esac
 
-cd ../;tnpm i
+cd ../;tnpm i tnpm
+
+node_modules/.bin/tnpm  i
 
 #由于aone上下载依赖包太慢，暂时使用在发布前在本地构建的方式
-cd statics;tnpm i;gulp -p;
+cd statics;../node_modules/.bin/tnpm i;gulp -p;
 
 
 
