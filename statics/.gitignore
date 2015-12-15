@@ -1,2 +1,4 @@
 node_modules
 npm-debug.log
+dist/app.bundle.js
+dist/rev-manifest.json
