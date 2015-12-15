@@ -32,13 +32,13 @@ var App = React.createClass({
 
             <div id="app-container" className="flex flex-column" style={{height:'100vh'}}>
                 <header className="flex justify-content-between align-items-center">
-                    <a href="/" className="logo" style={{fontSize:"30px",color:"#3D62AD",fontStyle:"italic"}}>
+                    <a href="/" className="logo">
                         BOSS
                     </a>
 
                     <div>
                         <span style={{marginRight:"10px"}}>{this.state.userName}</span>
-                        <span><a href="/logout">退出</a></span>
+                        <span><a href="/logout" className="logout">退出</a></span>
                     </div>
                     <ToastContainer ref={(toast)=>{window.toast=toast}}
                                     toastMessageFactory={React.createFactory(ToastMessage.jQuery)}

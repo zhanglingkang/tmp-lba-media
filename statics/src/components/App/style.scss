@@ -1,7 +1,8 @@
 @import "compass";
 
+$menuWidth: 180px;
 #menu-nav {
-  width: 180px;
+  width: $menuWidth;
   border-right: 1px solid #f2f2f2;
   a {
     display: block;
@@ -9,8 +10,10 @@
     font-size: 13px;
     border-right: 0;
     border-top: 0;
+    $menuActiveColor: #699BC2;
     &.active {
-      //background: #3d63ae;
+      background: $menuActiveColor;
+      border: $menuActiveColor;
     }
   }
 }
@@ -18,12 +21,22 @@
 #app-container {
 
   header {
-    padding: 5px 15px;
+    padding: 5px 15px 5px 0;
     height: 50px;
+    background-color: #337ab7;
+    color: white;
     @include box-shadow(0 1px 4px rgba(0, 0, 0, 0.10));
+    .logo, .logout {
+      color: white;
+    }
+    .logo {
+      text-decoration: blink;
+      width: $menuWidth;
+      font-size: 30px;
+      text-align: center;
+    }
   }
   section {
-    margin-top: 1px;
     .content {
       padding: 15px;
     }
