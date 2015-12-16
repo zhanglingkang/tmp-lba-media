@@ -15,17 +15,21 @@ var App = React.createClass({
     },
 
     render() {
-        var menu = this.props.route.childRoutes.map((childRoute, index)=> {
-            var active = ''
-            if (this.props.location.pathname.split('/').indexOf(childRoute.path) !== -1) {
-                active = 'active'
-            }
-            return (
-                <a key={index} href={"#/"+childRoute.path} className={`list-group-item ${active}`}>
-                    {childRoute.name}
-                </a>
-            )
-        })
+        var menu = this.props.route.childRoutes
+            .filter((childRoute)=> {
+                return childRoute.name
+            })
+            .map((childRoute, index)=> {
+                var active = ''
+                if (this.props.location.pathname.split('/').indexOf(childRoute.path) !== -1) {
+                    active = 'active'
+                }
+                return (
+                    <a key={index} href={"#/"+childRoute.path} className={`list-group-item ${active}`}>
+                        {childRoute.name}
+                    </a>
+                )
+            })
         //<img src={logo}></img>
 
         return (

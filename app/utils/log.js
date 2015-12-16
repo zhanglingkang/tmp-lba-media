@@ -4,7 +4,7 @@ var fs = require('fs')
 var util = require('./util')
 var logDirPath = path.join(__dirname, '../../logs')
 if (fs.existsSync('/home/admin')) {
-    logDirPath = '/home/admin/amap-web-boss/logs'
+    logDirPath = '/home/admin/amap-api-boss-web/logs'
 }
 util.mkdirSync(logDirPath)
 log4js.configure({
