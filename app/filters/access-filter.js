@@ -1,4 +1,4 @@
-var {accessLogger:logger} = require('../utils/log')
+var logger = require('../utils/log').accessLogger
 app.use(function*(next) {
     var userName = 'guest'
     var user = this.session.user
