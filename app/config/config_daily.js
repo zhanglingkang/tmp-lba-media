@@ -1,3 +1,4 @@
+var path = require('path')
 module.exports = {
-    bucLoginUrl: 'https://login-test.alibaba-inc.com'
+    viewsDir: path.join(__dirname, '../views/src')
 }
