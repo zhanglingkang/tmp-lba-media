@@ -1,0 +1,18 @@
+<html>
+<head>
+    <meta name="charset" content="utf-8"/>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="vendor/@alife/lba-common/dist/lba-common.css"/>
+    <!--<link rel="stylesheet" href="http://localhost:4000/lba-common.css"/>-->
+
+    {{{block ("head")}}}
+</head>
+<body>
+<div id="react-root"></div>
+<script src="vendor/jquery/dist/jquery.js" charset="utf-8"></script>
+<script src="vendor/react/dist/react.js" charset="utf-8"></script>
+<script src="vendor/react-dom/dist/react-dom.js"></script>
+{{{block ("body")}}}
+</body>
+</html>
